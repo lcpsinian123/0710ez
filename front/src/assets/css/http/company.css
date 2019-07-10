@@ -1,0 +1,65 @@
+.page-w{
+		width: 100% !important;
+		height:1050px;
+	}
+	#nav {
+		width: 100%;
+		height: 619px;
+		background: url(../../new/company/company.jpg);
+	}
+	#nav h1{
+		font-size: 40px;
+		color: #A6C8E3;
+		text-align: center;
+		font-weight: bold;
+		padding-top: 100px;
+	}
+	#nav h2 {
+		color: #fff;
+		font-size: 16px;
+		text-align: center;
+	}
+	.panel span{
+		color:red;
+	}
+	.panel{
+		border: 0 !important;
+		width: 100%;
+		border: 0;
+	}
+	.container input{
+		width:50%;
+	}
+	.panel .panel-heading{
+		background-color: #fff;
+
+	}
+	.panel .panel-heading .title{
+		border-left:5px  solid #51A0F3;
+		font-size: 16px;
+		padding-left: 10px;
+		color: #51A0F3;
+	}
+	
+	.container form .form-group{
+		margin-top:30px;
+	}
+	.container{
+		min-height: 600px;
+		margin-bottom: 150px;
+		border-radius: 5px;
+	}
+	.container .panel{
+		width: 100%;
+		border: 0;
+		box-shadow: 0 0 0;
+	}
+	.container form{
+		margin: 50px 0 0 150px;
+	}
+	.panel button{
+		background-color: #166FCD;
+		width: 150px;
+		height: 40px;
+		font-size: 16px;
+	}

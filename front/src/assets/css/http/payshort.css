@@ -1,0 +1,133 @@
+.el-tabs-f .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+	background: #167ef0;
+    color:  white;
+    border: 0;
+    letter-spacing: 1px;
+}
+
+.el-tabs-f .iconfont {
+	font-family: iconfont !important;
+	font-size: 24px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	top: 2px;
+}
+
+.el-tabs-f .el-tabs--border-card {
+	background: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15), 0 0 8px 0 rgba(0, 0, 0, .04);
+	border: 0;
+}
+
+.el-menu-f .el-menu-item.is-active {
+	color: #fff;
+	background: #2691ff;
+}
+
+.el-tabs-f .el-tabs--border-card>.el-tabs__header {
+	background-color: #eeeeee2b;
+	margin: 0;
+	border: 0;
+}
+.el-tabs-f .el-tabs--border-card>.el-tabs__header .el-tabs__item {
+    color: #167ef0;
+    background: #f0f7ff;
+    border-top: 1px solid #167ef0;
+}
+.el-tabs-f .el-tabs__item {
+	padding: 0 20px;
+	height: 64px;
+	box-sizing: border-box;
+	line-height: 64px;
+	display: inline-block;
+	list-style: none;
+	font-size: 20px;
+	font-weight: 700;
+	color: #969696;
+	position: relative;
+}
+
+.el-tabs-f .el-input__suffix {
+	right: 5px;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+
+.el-tabs-f i.el-icon-question.el-tooltip {
+	position: relative;
+	top: -3px;
+	left: 3px;
+	color: #ccc;
+}
+
+.el-tabs-f .el-form-item__label {
+	text-align: right;
+	float: left;
+	font-size: 12px;
+	color: #606266;
+	line-height: 35px;
+	padding: 0 24px 0 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.el-tabs-f i.el-icon-caret-top {
+	margin-left: 5px;
+}
+
+
+.el-tabs-f .el-input__inner {
+	-webkit-appearance: none;
+	background-color: #fff;
+	background-image: none;
+	border-radius: 4px;
+	border: 1px solid #dcdfe6;
+	box-sizing: border-box;
+	color: #606266;
+	display: inline-block;
+	font-size: inherit;
+	height: 35px;
+	line-height: 35px;
+	outline: 0;
+	transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+	width: 100%;
+}
+
+.el-tabs-f button.el-button.submit.el-button--primary {
+	margin: 0px 80px 20px 0;
+}
+
+.el-tabs-f .el-form-item .el-input__inner,
+.el-tabs-f .el-form-item .el-input__inner:focus,
+.el-tabs-f .el-form-item .el-textarea__inner,
+.el-tabs-f .el-form-item .el-textarea__inner:focus {
+	border-color: #147af0;
+}
+.el-tabs-f .el-input__suffix-inner .el-icon-arrow-up{
+	line-height: 36px;
+}
+.el-tabs-f .el-icon-circle-check:before {
+	color: #147af0;
+}
+
+
+.el-tabs-f h3:first-of-type {
+	display: inline;
+}
+
+.el-tabs-f #fold:checked+i+ul {
+	display: none;
+}
+
+.el-tabs-f #fold:checked+.el-icon-caret-top {
+	transform: rotate(180deg);
+}
+
+.el-tabs-f .el-form-item__content {
+	line-height: 35px;
+	position: relative;
+	font-size: 12px;
+} 

@@ -1,0 +1,71 @@
+
+.page-w{
+		width:100% !important;
+		background-color: #F5F5F7;
+		height: 950px;
+	}
+		div.top_pic img {
+		max-width: 100%;
+	}
+	div.container img {
+		max-width: 100%;
+	}
+
+	.container{
+		width: 65%;
+		height: auto;
+		margin: 0 auto;
+		background-color: #fff;
+		margin-top: 10px;
+		min-width: 980px;
+
+	}
+	.container .container_top{
+		height: 50px;
+		padding-top:30px;
+		margin-left: 30px;
+	}
+	.container .container_top h2{
+		font-size: 22px;
+		color: #529FF2;
+		letter-spacing: 2px;
+		padding: 0 15px;
+		border-left:5px solid #167EF0;
+		height: 30px;
+		padding: 0 0 0 20px;
+	}
+	.container hr{
+		margin-top: 20px;
+	}
+	.container .container_left{
+		width: 60%;
+		float: left;
+		padding-left: 30px;
+		padding-bottom: 30px;
+	}
+	.container .container_right{
+		height: 480px;
+		float: right;
+		/* margin-left: 30px; */
+		width: 32%;
+		display: inline-flex;
+		align-items: center;
+	}
+	.container .container_left p{
+		white-space:normal;
+		word-break:break-all;
+		overflow:hidden;
+		justify-content: space-between;
+		text-align: justify;
+		font-size: 14px;
+		color: #666;
+		line-height: 28px;
+		letter-spacing: 1px;
+		margin-top: 30px;
+		padding-left: 15px;
+	}
+	.container:after {
+    content:  '';
+    clear: both;
+    display:  block;
+}
