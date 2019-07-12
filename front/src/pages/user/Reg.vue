@@ -17,7 +17,7 @@
             </div>
             <span style="float: right;margin:0 1.5%;">
                 <span class='regfontsize'>我已注册,现在就</span>
-				 <el-button style="background:  white;color: #555565;border-radius: 4px;padding: 10px 12px;" round  @click="centerDialogVisible = true">登陆</el-button>
+				 <el-button style="width:60px; height:30px; background:#eee; color: #555565;border-radius: 4px;padding: 0px 12px;" round  @click="centerDialogVisible = true">登录</el-button>
 
                 <el-dialog class='loginBox' :modal='false' style="background:rgba(0,0,0,.8)" :visible.sync="centerDialogVisible" width="25%"  >
                     <div class="login" >
@@ -36,20 +36,20 @@
                                 </div>
 
                                 <el-form class="login-form">
-                                    <el-form-item>
+                                    <el-form-item style="margin-bottom:10px">
                                         <div class="login-input">
                                             <el-input placeholder="用户名/手机号" prefix-icon="iconfont yz-mobile" v-model="items.username" class="login-inputtext">
                                             </el-input>
                                         </div>
                                     </el-form-item>
-                                    <el-form-item>
+                                    <el-form-item style="margin-bottom:10px">
                                         <div class="login-input">
                                             <el-input placeholder="密码" prefix-icon="iconfont yz-password" v-model="items.pwd" type="password" class="login-inputtext">
                                             </el-input>
                                         </div>
                                     </el-form-item>
 
-                                    <el-form-item>
+                                    <el-form-item style="margin-bottom:10px">
                                         <div class="verify-line">
                                             <el-input placeholder="图形验证码" prefix-icon="iconfont yz-password" v-model="items.imgcode" class="login-inputtext login-vcode" style="width: 190px; height:40px;margin-right:2px;">
 
@@ -58,12 +58,12 @@
                                         </div>
                                     </el-form-item>
 
-                                    <el-form-item>
+                                    <el-form-item style="margin-bottom:10px">
                                         <div class="forget-password">
                                             <el-checkbox v-model="checked">下次自动登录</el-checkbox>
                                         </div>
                                     </el-form-item>
-                                    <el-form-item>
+                                    <el-form-item style="margin-bottom:10px">
                                         <el-button type="primary" class="login-btn" @click="login">登 录</el-button>
                                     </el-form-item>
                                    
@@ -84,11 +84,11 @@
                 </el-dialog>
             </span>
         </div>
-		<div>
-		<img src="../../assets/regbg.png"/>
-		</div>
+		
     </div>
-
+    <div style='width:1200px; margin:0 auto;' >
+		    <img style='width=980px;' src="../../assets/regbg.png" />
+		</div>
     <el-row type="flex" justify="center">
         <el-col :xs="1" :sm="4" :md="6" :lg="6" :xl="6">&nbsp;</el-col>
         <el-col :xs="22" :sm="18" :md="12" :lg="12" :xl="8">
@@ -96,39 +96,39 @@
 
             <div class="reg-form">
                 <el-form ref="form" :model="items" label-width="100px">
-                    <el-form-item label="用户名：">
+                    <el-form-item style='margin-bottom:20px;' label="用户名：">
                         <el-input v-model="items.username" style="width:350px" placeholder="请输入用户名"></el-input>
                     </el-form-item>
-                    <el-form-item label="密码：">
+                    <el-form-item style='margin-bottom:20px;' label="密码：">
                         <el-input v-model="items.password" style="width:350px" type="password" placeholder="请输入密码"></el-input>
                     </el-form-item>
-                    <el-form-item label="密码确认：">
+                    <el-form-item style='margin-bottom:20px;' label="密码确认：">
                         <el-input v-model="items.cpassword" style="width:350px" type="password" placeholder="请输入密码确认"></el-input>
                     </el-form-item>
 
-                    <el-form-item label="手机号码：">
+                    <el-form-item style='margin-bottom:20px;' label="手机号码：">
                         <el-input v-model="items.tel" style="width:350px" placeholder="请输入手机号码"></el-input>
                     </el-form-item>
-                    <el-form-item label="图形验证码：">
+                    <el-form-item style='margin-bottom:20px;' label="图形验证码：">
                         <el-input v-model="items.imgcode" placeholder="图形验证码" style="width:178px;"></el-input>
                         <img :src="imgurl" @click="reload" class="imgcode" style="160px; height: 40px; vertical-align: top;">
                     </el-form-item>
-                    <el-form-item label="短信验证码：">
+                    <el-form-item style='margin-bottom:20px;' label="短信验证码：">
                         <el-input v-model="items.smscode" placeholder="短信验证码" style="width:178px;">
 
                         </el-input>
-                        <el-button type="primary" @click="sendsms" :disabled="sendsms_btn_status" style="width: 160px;">{{smstxt}}</el-button>
+                        <el-button  @click="sendsms" :disabled="sendsms_btn_status" style="background:#eee; width: 160px;">{{smstxt}}</el-button>
                     </el-form-item>
-
-                    <el-form-item type="flex" justify="center">
-                        <el-button type="primary" @click="reg" style="width:350px; height:50px; font-size:16px; font-family:'SimSun'">注册</el-button>
-
-                    </el-form-item>
-
-                    <div class="agree-check">
-                        <el-checkbox v-model="checked">我同意</el-checkbox>
-                        <a href="#" @click="showDesc">《亿洲HTTP用户注册协议》</a>
+                      <div class="agree-check">
+                        <el-checkbox style='margin:0; font-size:12px;' v-model="checked">阅读并接受</el-checkbox>
+                        <a href="#"  @click="showDesc">《亿洲HTTP用户注册协议》</a>
                     </div>
+                    <el-form-item style='margin-bottom:22px;' type="flex" justify="center">
+                        <el-button type="primary" @click="reg" style=" width:350px; height:50px; font-size:16px; font-family:'SimSun'">注册</el-button>
+
+                    </el-form-item>
+
+                  
 
                 </el-form>
 
@@ -176,7 +176,7 @@ export default {
     name: 'Login',
     data() {
         return {
-            smstxt: '获取验证码',
+            smstxt: '获取短信验证码',
             sendsms_btn_status: false,
             dialogVisible: false,
 			centerDialogVisible:false,
@@ -325,12 +325,63 @@ export default {
                     }
                 })
 
-        }
+        },
+        login: function() {
+				var _this = this
+				if(this.items.username == '') {
+					this.$message.error('用户名不能为空')
+					return false;
+				}
+				if(this.items.pwd == '') {
+					this.$message.error('密码不能为空')
+					return false;
+				}
+				if(this.items.imgcode == '') {
+					this.$message.error('验证码不能为空')
+					return false;
+				}
+				var data = {
+					username: this.items.username,
+					password: this.items.pwd,
+					checkcode: this.items.imgcode
+				}
+				this.$http.post(this.$config.userhost+'login/checkLogin', this.$qs.stringify(data)).then(
+					response => {
+						/*如果有来源登录成功返回来源*/
+						var res = response.data
+
+						if(res.state == 1) {
+							this.$message({
+								message: res.msg,
+								type: 'error'
+							});
+							this.imgurl = this.$config.userhost + 'Verify/entry?r=' + Math.random();
+						} else if(res.state == 0) {
+							
+							localStorage.setItem('auth_data', JSON.stringify(res.data))
+							this.$router.replace('/ucenter/index')
+						}
+					})
+
+			},
     }
 }
 </script>
+<style>
+  .el-form .el-form-item{
+        margin-bottom:10px;
+    }
+   .agree-check .el-checkbox__label{
+        font-size:12px;
+    }
+    .el-form-item__label{
+        color:#666;
+        padding-right:10px;
+    }
+</style>
 
 <style scoped>
+
 .CopyRight {
 	color:#7478c8;
 	margin-top:118px;
@@ -371,7 +422,7 @@ export default {
 
 .regheader {
     width: 980px;
-    height: 75px;
+    height: 52px;
     margin: 0 auto;
 }
 
@@ -468,8 +519,14 @@ export default {
 
 .agree-check {
     text-align: left;
-    margin-left: 100px;
-    margin-top: 20px;
+
+    margin:20px 0 20px 100px;
+    
+}
+
+.agree-check >a   {
+    font-size:12px;
+    text-decoration:none;
 }
 
 .inner {
@@ -536,11 +593,11 @@ export default {
     vertical-align: middle;
     margin-left: 90px;
 	color:#1e1e1e;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .login-form {
-    margin-top: 20px;
+    margin-top: 17px;
     padding: 0 27px;
 }
 

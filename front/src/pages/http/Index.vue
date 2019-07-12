@@ -5,7 +5,7 @@
 		</div>
 		<div class="page-w">
 			<div class="top_pic">
-				<div class="top_div">
+				<div v-if='articleList.length>0' class="top_div">
 					<h1>HTTP 代理IP</h1>
 					<p style="font-size: 1.67vw;">千万级高质量节点 平均IP有效率99%</p>
 					<p style="font-size: 1.15vw;">API无提取限制 并发调用更方便</p>

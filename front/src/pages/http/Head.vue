@@ -13,7 +13,7 @@
                 <el-button style="border-radius: 4px;padding: 10px 12px;background-color: #147af0;border-color: #147af0;" type="primary" @click="logout" round>退出登录</el-button>
             </span>
             <span v-else style="float: right;margin-left: 1.5%;">
-                <el-button style="background:  white;color: #147af0;border-radius: 4px;padding: 10px 12px;" type="primary" round @click="centerDialogVisible = true">登陆</el-button>
+                <el-button style="background:  white;color: #147af0;border-radius: 4px;padding: 10px 12px;" type="primary" round @click="centerDialogVisible = true">登录</el-button>
 
                 <el-dialog class='loginBox' :modal='false' style="background:rgba(0,0,0,.8)" :visible.sync="centerDialogVisible" width="25%"  >
                     <div class="login" >
@@ -32,20 +32,20 @@
                                 </div>
 
                                 <el-form class="login-form">
-                                    <el-form-item>
+                                    <el-form-item style='margin-bottom:10px;'>
                                         <div class="login-input">
                                             <el-input placeholder="用户名/手机号" prefix-icon="iconfont yz-mobile" v-model="items.username" class="login-inputtext">
                                             </el-input>
                                         </div>
-                                    </el-form-item>
-                                    <el-form-item>
+                                    </el-form-item >
+                                    <el-form-item style='margin-bottom:10px;'>
                                         <div class="login-input">
                                             <el-input placeholder="密码" prefix-icon="iconfont yz-password" v-model="items.pwd" type="password" class="login-inputtext">
                                             </el-input>
                                         </div>
                                     </el-form-item>
 
-                                    <el-form-item>
+                                    <el-form-item style='margin-bottom:10px;' >
                                         <div class="verify-line">
                                             <el-input placeholder="图形验证码" prefix-icon="iconfont yz-password" v-model="items.imgcode" class="login-inputtext login-vcode" style="width: 190px; height:40px;margin-right:2px;">
 
@@ -54,12 +54,12 @@
                                         </div>
                                     </el-form-item>
 
-                                    <el-form-item>
+                                    <el-form-item style='margin-bottom:10px;' >
                                         <div class="forget-password">
                                             <el-checkbox v-model="checked">下次自动登录</el-checkbox>
                                         </div>
                                     </el-form-item>
-                                    <el-form-item>
+                                    <el-form-item style='margin-bottom:10px;' >
                                         <el-button type="primary" class="login-btn" @click="login">登 录</el-button>
                                     </el-form-item>
                                    
@@ -79,7 +79,7 @@
                 
                 </el-dialog>
                 
-                <el-button style="border-radius: 4px;padding: 10px 12px;background-color: #147af0;border-color: #147af0;" type="primary" round @click="register">注册</el-button>
+                <el-button style=" margin-left:10px; border-radius: 4px;padding: 10px 12px;background-color: #147af0;border-color: #147af0;" type="primary" round @click="register">注册</el-button>
             </span>
             <ul>
                 <li id="index">
@@ -265,6 +265,10 @@ export default {
     .loginBox .login-vcode.el-input--prefix .el-input__inner::-webkit-input-placeholder{
             color:rgb(212, 218, 227);
     }
+    
+    .el-checkbox__label{
+        font-size:12px;
+    }
 </style>
 <style scoped>
 .loginBox .el-dialog__body{
@@ -315,11 +319,11 @@ export default {
     vertical-align: middle;
     margin-left: 90px;
 	color:#1e1e1e;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .login-form {
-    margin-top: 20px;
+    margin-top: 17px;
     padding: 0 27px;
 }
 
@@ -466,7 +470,7 @@ export default {
 
 .header a {
     float: left;
-  
+    margin:0 1vw;
     width: 60px;
     height: 60px;
     display: block;
