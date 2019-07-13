@@ -2,7 +2,7 @@
 <div>
     <div class='regheader'>
         <div class='LogoBox'>
-            <div class="header-logo">
+            <div class="header-logo"@click ='goindex' >
                 <img src="../../assets/logo_blue.png" title="http代理ip-logo" alt="logo-亿洲网络" style="width: 31.7%;">
                 <div style="width: 68%; overflow:  hidden;">
                     <img id="logo" src="../../assets/logo_white.png" title="http代理ip-亿洲网络" alt="首页logo-亿洲网络">
@@ -16,7 +16,7 @@
                 注册账号
             </div>
             <span style="float: right;margin:0 1.5%;">
-                <span class='regfontsize'>我已注册,现在就</span>
+                <span class='regfontsize'>我已注册&nbsp;,&nbsp;现在就&nbsp;</span>
 				 <el-button style="width:60px; height:30px; background:#eee; color: #555565;border-radius: 4px;padding: 0px 12px;" round  @click="centerDialogVisible = true">登录</el-button>
 
                 <el-dialog class='loginBox' :modal='false' style="background:rgba(0,0,0,.8)" :visible.sync="centerDialogVisible" width="25%"  >
@@ -121,10 +121,10 @@
                     </el-form-item>
                       <div class="agree-check">
                         <el-checkbox style='margin:0; font-size:12px;' v-model="checked">阅读并接受</el-checkbox>
-                        <a href="#"  @click="showDesc">《亿洲HTTP用户注册协议》</a>
+                        <a href="#"  @click="showDesc">《亿洲网络用户协议》</a>
                     </div>
                     <el-form-item style='margin-bottom:22px;' type="flex" justify="center">
-                        <el-button type="primary" @click="reg" style=" width:350px; height:50px; font-size:16px; font-family:'SimSun'">注册</el-button>
+                        <el-button type="primary" @click="reg" style="font-weight:600; width:350px; height:50px; font-size:16px; font-family:'SimSun'">注册</el-button>
 
                     </el-form-item>
 
@@ -363,7 +363,11 @@ export default {
 						}
 					})
 
-			},
+		},
+        goindex:function(){
+            this.$router.push('/')
+        }
+
     }
 }
 </script>
@@ -376,12 +380,17 @@ export default {
     }
     .el-form-item__label{
         color:#666;
+        font-weight:600;
         padding-right:10px;
     }
 </style>
 
 <style scoped>
-
+@media screen and (max-width:1024px){
+    .header-logo{
+        margin-left:10px;
+    }
+}
 .CopyRight {
 	color:#7478c8;
 	margin-top:118px;
@@ -653,6 +662,14 @@ export default {
 
 </style>
 <style>
+   .reg-form .el-input>.el-input__inner{
+       font-size:14px;
+       font-family:"宋体";
+    }
+   .reg-form .el-input>.el-input__inner::-webkit-input-placeholder{
+    
+       color:#666
+    }
     .loginBox .el-dialog{
         width: 356px !important;
     }

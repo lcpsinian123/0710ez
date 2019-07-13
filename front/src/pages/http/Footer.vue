@@ -36,11 +36,11 @@
 		<footer class="footer" style="background:black;height:65;">
 			<div class="wrap">
 				<div class="footer-row" style="padding-top:0;margin-top:5px;">
-					<p class="text" style="font-size:12px;font-family:'SimSun';color:#939393;text-align:center;padding-left:0;margin:0;">亿洲网络仅为企业在国内的大数据采集分析等业务提供服务，禁止用户使用亿洲网络从事任何违反法律法规的活动
+					<p class="text1">亿洲网络仅为企业在国内的大数据采集分析等业务提供服务，禁止用户使用亿洲网络从事任何违反法律法规的活动
 						<br>
 					</p>
-					<p class="text" style="font-size:12px;font-family:'SimSun';color:#939393;text-align:center;padding-left:0;margin:0;">用户使用亿洲网络从事的行为均不代表亿洲网络的意志和观点，与亿洲网络的立场无关， 产生的相关责任用户自负，对此亿洲网络不承担任何法律责任</p>
-					<p class="text" style="font-size:12px;font-family:'SimSun';color:#939393;text-align:center;padding-left:0;margin:0;">版权所有　赣州市亿洲网络科技有限公司 赣ICP备16006886号-2　Powered by Yizhou tech ©2018　 增值电信业务许可证:B1-20160677 赣B2-20170056</p>
+					<p class="text1" >用户使用亿洲网络从事的行为均不代表亿洲网络的意志和观点，与亿洲网络的立场无关， 产生的相关责任用户自负，对此亿洲网络不承担任何法律责任</p>
+					<p class="text1" >版权所有　赣州市亿洲网络科技有限公司 赣ICP备16006886号-2　Powered by Yizhou tech ©2018　 增值电信业务许可证:B1-20160677 赣B2-20170056</p>
 				</div>
 				<div style="width:300px;margin:0 auto; padding:5px 0;">
 					<img src="../../assets/1.png" style="float:left;">
@@ -69,5 +69,6 @@
 </script>
 
 <style scoped>
+
 	@import url('../../assets/css/http/footer.css');
 </style>

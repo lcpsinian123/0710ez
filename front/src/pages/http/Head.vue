@@ -210,7 +210,8 @@ export default {
         },
         openlogin: function () {
 
-        }
+        },
+       
     },
     mounted() {
         var route = this.$route.path
@@ -420,7 +421,7 @@ export default {
     margin-right: 0;
     margin-top: 0;
     float: left;
-    margin-left: 10px;
+  
 }
 
 .header-w ul {

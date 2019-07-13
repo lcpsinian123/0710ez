@@ -355,15 +355,21 @@
 		background-color: #1168c3;
 		min-width: 100px;
 	}
+	
 	.dynamic{
 		width:100%;
-		height: auto;
+		height:auto;
 		background-color: #fff;
 		padding-bottom: 30px;
-		min-height: 640px;
+		min-height: 720px;
+	}
+	@media screen and (max-width:1024px){
+		.dynamic{
+			min-height: 900px;
+		}
 	}
 	.dynamic_main{
-		width: 70%;
+		width: 80%;
 		height: auto;
 		margin: 0 auto;
 		min-width: 800px;
