@@ -128,6 +128,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       staticDir: path.join(__dirname, '../dist'),
       // Required - Routes to render.
       routes: ['/','/bigdata','/package','/company','/about','/help','/more','/article','/user/login','/user/reg' ],
+      
     })
   ]
 })

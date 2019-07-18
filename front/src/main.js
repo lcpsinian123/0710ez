@@ -189,5 +189,6 @@ new Vue({
 	components: {
 		App
 	},
-	template: '<App/>'
+	template: '<App/>',
+
 })

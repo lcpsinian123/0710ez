@@ -183,4 +183,18 @@
 	.el-form .el-form-item{
 		width:50%;
 	}
+		@media screen and (max-width:1024px){
+		.el-row .el-col .el-button{
+			margin-left: 10px;
+		}
+		.user-right{
+			width:699px;
+		}
+		.container{
+			width:100%;
+		}
+		.auditor_right{
+			width:100%;
+		}
+	}
 </style>

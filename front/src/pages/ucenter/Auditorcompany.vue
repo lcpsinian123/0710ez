@@ -169,7 +169,7 @@
 						this.$alert('你已申请过企业认证，请勿重复申请！', '提示', {
 							confirmButtonText: '确定',
 							callback: action => {
-								this.$router.replace('/ucenter/auditor')
+								this.$router.push('/ucenter/auditor')
 							}
 						}
 						)

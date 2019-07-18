@@ -33,7 +33,7 @@
 										<el-button type="primary" @click="checkAuditor(2)">申请企业认证</el-button>
 									</div>
 									<p class="auditor_p">适用：有营运资质的企业主体；有较高服务需求如：已经投放市场，并有一定用户基础的产品业务；</p>
-									<br>
+									
 									<p class="auditor_pp">*可使用平台所有服务和产品功能；</p>
 									<p class="auditor_pp">*优先采纳需求反馈，提供技术支持；</p>
 									<p class="auditor_pp">*获得更多商务支持，运营合作机会；</p>
@@ -321,7 +321,11 @@
 	p {
 		margin: 0 0 10px;
 	}
-
+@media screen and (max-width:1024px){
+	p{
+		margin:0 0 5px;
+	}
+}
 	.auditor_pp {
 		font-size: 12px;
 		text-align: left;
@@ -404,5 +408,19 @@
 	}
 	.info p{
 		color:#9A9A9A;
+	}
+		@media screen and (max-width:1024px){
+		.el-row .el-col .el-button{
+			margin-left: 10px;
+		}
+		.user-right{
+			width:699px;
+		}
+		.container{
+			width:100%;
+		}
+		.auditor_right{
+			width:100%;
+		}
 	}
 </style>

@@ -50,7 +50,7 @@
                                             <el-input placeholder="图形验证码" prefix-icon="iconfont yz-password" v-model="items.imgcode" class="login-inputtext login-vcode" style="width: 190px; height:40px;margin-right:2px;">
 
                                             </el-input>
-                                            <img :src="imgurl" @click="reload" class="imgcode" style="height: 42px; width: 100px;">
+                                            <img :src="imgurl" @click="reload" class="imgcode" style="height: 42px; width: 100px; margin-left:10px;">
                                         </div>
                                     </el-form-item>
 
@@ -60,7 +60,7 @@
                                         </div>
                                     </el-form-item>
                                     <el-form-item style='margin-bottom:10px;' >
-                                        <el-button type="primary" class="login-btn" @click="login">登 录</el-button>
+                                        <el-button type="primary" class="login-btn" @click="login">登录</el-button>
                                     </el-form-item>
                                    
                                 </el-form>
@@ -340,7 +340,7 @@ export default {
 .login-btn {
     width: 100%;
     height: 45px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .verify-line {

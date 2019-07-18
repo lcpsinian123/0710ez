@@ -59,7 +59,7 @@
 									<el-col :span="5">
 										<el-card shadow="hover">
 											<span class="right" style="font-size: 14px;color: #9ea1ab;">用户名</span>
-											<span class="right" style="margin: 10px auto;color: #222222;font-size: 22px;">{{userInfo.username}}</span>
+											<span class="right mfont" style="margin: 10px auto;color: #222222;">{{userInfo.username}}</span>
 											<el-button type="primary" size="small" @click="changepwd()">
 													修改密码
 											</el-button>
@@ -69,7 +69,7 @@
 									<el-col :span="5">
 										<el-card shadow="hover">
 											<span class="right" style="font-size: 14px;color: #9ea1ab;">手机号</span>
-											<span class="right" style="margin: 10px auto;color: #222222;font-size: 22px;">{{userInfo.tel}}</span>
+											<span class="right mfont" style="margin: 10px auto;color: #222222;">{{userInfo.tel}}</span>
 											<el-button type="primary"  size="small" v-clipboard:copy="userInfo.cdkey" v-clipboard:success="onCopy" v-clipboard:error="onError">
 												<span style="font-family: SimSun;font-size: 14px;font-weight: bold;letter-spacing: 1px;">{{userInfo.cdkey}}</span>
 											</el-button>
@@ -79,7 +79,7 @@
 									<el-col :span="5">
 										<el-card shadow="hover">
 											<span class="right" style="font-size: 14px;color: #9ea1ab;">HTTP账户余额(元)</span>
-											<span class="right" style="margin: 10px auto;color: #222222;font-size: 22px;">{{userBalance}}</span>
+											<span class="right mfont" style="margin: 10px auto;color: #222222;">{{userBalance}}</span>
 											<el-button size="small" type="primary" @click="recharge(1)">充值</el-button>
 										</el-card>
 									</el-col>
@@ -87,7 +87,7 @@
 									<el-col :span="5">
 										<el-card shadow="hover">
 											<span class="right" style="font-size: 14px;color: #9ea1ab;">PPTP账户余额(元)</span>
-											<span class="right" style="margin: 10px auto;color: #222222;font-size: 22px;">{{pptpuserBalance}}</span>
+											<span class="right mfont" style="margin: 10px auto;color: #222222;">{{pptpuserBalance}}</span>
 											<el-button size="small" type="primary" @click="recharge(2)">充值</el-button>
 										</el-card>
 									</el-col>
@@ -256,5 +256,25 @@
 	.el-row .el-col a {
 		color: #fff;
 		text-decoration: none;
+	}
+	.mfont{
+		font-size:22px;
+	}
+	@media screen and (max-width:1024px){
+		.el-row .el-col .el-button{
+			margin-left: 10px;
+		}
+		.user-right{
+			width:730px;
+		}
+		.container{
+			width:100%;
+		}
+		.mfont{
+			font-size:20px;
+		}
+		.main_row .el-card{
+			width:160px;
+		}
 	}
 </style>

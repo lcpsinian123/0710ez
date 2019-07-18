@@ -299,11 +299,11 @@
 		</el-row>
 		<el-row>
 			<el-col :span="1">&nbsp;</el-col>
-			<el-col :span="17">
+			<el-col :span="17" class='inwd' >
 				<el-input v-model="ip_url" placeholder="点击上方按钮,生成API链接"></el-input>
 			</el-col>
 			<el-col :span="1">&nbsp;</el-col>
-			<el-col :span="5">
+			<el-col :span="5" class='inwh'>
 				<el-button type="primary" plain v-clipboard:copy="ip_url" v-clipboard:success="onCopy" v-clipboard:error="onError">复制链接</el-button>
 				<el-button type="primary" plain @click="openurl">打开链接</el-button>
 			</el-col>
@@ -670,5 +670,13 @@
 
 <style scoped>
 	@import url('../../assets/css/http/getip.css');
+	@media screen and (max-width:1024px){
+		.el-row .inwd{
+			width:60%
+		}
+		.el-row .inwh{
+			width:22%
+		}
+	}
 
 </style>
