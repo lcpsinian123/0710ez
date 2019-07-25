@@ -240,4 +240,13 @@ export default {
         font-size: 10px
     }
 }
+@media screen and (max-width:768px){
+    .page-w{
+        height:1280px;
+    }
+   .form-group  .btnres {
+       margin:30px 0 0 30px;
+
+    }
+}
 </style>
